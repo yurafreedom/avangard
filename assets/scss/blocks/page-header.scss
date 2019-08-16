@@ -51,6 +51,10 @@
 			text-transform: uppercase;
 			color: #fff;
 		}
+		&:hover, &:active, &:focus {
+			color: #fff;
+			text-decoration: none;
+		}
 	}
 	&__phone-link {
 		position: relative;
