@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'SFProDisplay';
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: local('SFProDisplay Regular'), local('SFProDisplay-Regular'),
+        url('../fonts/SFProDisplay-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/SFProDisplay-Regular.woff') format('woff'), /* Modern Browsers */
+}
+
+@font-face {
+  font-family: 'SFProDisplay';
+  font-style: normal;
+  font-weight: 500;
+  font-display: fallback;
+  src: local('SFProDisplay Medium'), local('SFProDisplay-Medium'),
+        url('../fonts/SFProDisplay-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/SFProDisplay-Medium.woff') format('woff'), /* Modern Browsers */
+}
+
+@font-face {
+  font-family: 'SFProDisplay';
+  font-style: normal;
+  font-weight: 600;
+  font-display: fallback;
+  src: local('SFProDisplay Semibold'), local('SFProDisplay-Semibold'),
+        url('../fonts/SFProDisplay-Semibold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/SFProDisplay-Semibold.woff') format('woff'), /* Modern Browsers */
+}
+
+
+@font-face {
+  font-family: 'SFProDisplay';
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+  src: local('SFProDisplay Bold'), local('SFProDisplay-Bold'),
+        url('../fonts/SFProDisplay-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/SFProDisplay-Bold.woff') format('woff'), /* Modern Browsers */
+}
+
+@font-face {
+  font-family: 'SFProDisplay';
+  font-style: normal;
+  font-weight: 800;
+  font-display: fallback;
+  src: local('SFProDisplay Heavy'), local('SFProDisplay-Heavy'),
+        url('../fonts/SFProDisplay-Heavy.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/SFProDisplay-Heavy.woff') format('woff'), /* Modern Browsers */
+}
+
+

@@ -1,0 +1,56 @@
+.btn {
+	position: relative;
+	outline: none !important;
+	border: none;
+	cursor: pointer;
+	text-decoration: none !important;
+	background: none;
+	-webkit-appearance: none;
+	
+	display: inline-block;
+	width: 100%;
+	color: #fff;
+	background-color: #225560;
+	box-shadow: 0px 0px 20px rgba(164, 44, 38, 0.3);
+	border-radius: 10px;
+	text-align: center;
+	vertical-align: middle;
+	font-family: 'SFProDisplay', sans-serif;
+	font-size: 20px;
+	line-height: 1.2;
+	height: auto;
+	letter-spacing: 0;
+	font-weight: 700;
+	
+	-webkit-transform: translateZ(0px);
+	-webkit-font-smoothing: antialiased;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	padding-top: 30px;
+	padding-bottom: 26px;
+	
+	border: none;
+	
+	transition: all 0.3s ease-in-out;
+	
+	> * {
+		line-height: 1;
+	}
+	
+	&:hover {
+		box-shadow: none;
+	}
+	
+	&:active,
+	&:focus,
+	&:hover {
+		text-decoration: none !important;
+		outline: none !important;
+		box-shadow: none !important;
+	}
+}
+
+.btn--order {
+	width: 280px;
+}
