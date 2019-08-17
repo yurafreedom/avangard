@@ -1,8 +1,7 @@
 $(document).ready(function () {
  if( $(".swiper-container").length ) {
-	  var mySwiper = new Swiper ('.swiper-container', {
+	  var objectSwiper = new Swiper ('#objects_slider', {
 		slidesPerView: 1,
-		spaceBetween: 20,
 		navigation: {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
@@ -19,14 +18,52 @@ $(document).ready(function () {
  }
 });
 
-$(window).on('scroll load', function() {
- var headerFixedHeight = 200;
- if ($(this).scrollTop() > headerFixedHeight && !($('body').hasClass("scrolled")) ) {
-  $('body').addClass("scrolled");
- } else if($(this).scrollTop() <= headerFixedHeight && $('body').hasClass("scrolled")) {
-  $('body').removeClass("scrolled");
+$(document).ready(function () {
+ if( $(".swiper-container").length ) {
+      var kindSwiper = new Swiper ('#kinds_slider', {
+        slidesPerView: 1,
+        spaceBetween: 31,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: ".js--doctor-pag",
+            clickable: true,
+        },
+      });
+        $(window).resize(function() {
+            mySwiper.update(true),
+            console.log("mySwiper update")
+        })
  }
 });
+
+// var objectSwiper = new Swiper ('#objects_slider', {
+//     slidesPerView: 1,
+//     spaceBetween: 20,
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//     },
+//     pagination: {
+//         el: ".js--doctor-pag",
+//         clickable: true,
+//     },
+// });
+
+// var kindSwiper = new Swiper ('#kinds_slider', {
+//     slidesPerView: 1,
+//     spaceBetween: 31,
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//     },
+//     pagination: {
+//         el: ".js--doctor-pag",
+//         clickable: true,
+//     },
+// });
 
 $("form").each(function() {
     $(this).validate({
@@ -53,8 +90,3 @@ $("form").each(function() {
         },
     });
 });
-
-if ($('.js--datepicker').length) {
-    $( ".js--datepicker" ).datepicker();
-    $.datepicker.regional['ru'];
-}
