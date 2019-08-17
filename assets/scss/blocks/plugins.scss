@@ -11,7 +11,10 @@
 	padding: 20px;
 }
 
-.swiper-button-prev, .swiper-button-next {
+.objects-button-prev, .objects-button-next,
+.kinds-button-prev, .kinds-button-next,
+.warranty-button-prev, .warranty-button-next {
+	position: absolute;
 	top: auto;
 	bottom: 50px;
 	width: 60px;
@@ -23,9 +26,18 @@
 	background-size: 10px 18px;
 	background-position: center center;
 	outline: none;
+	z-index: 100;
 }
 
-.swiper-button-prev {
+.kinds-button-prev, .kinds-button-next {
+	bottom: -30px;
+}
+
+.warranty-button-prev, .warranty-button-next {
+	bottom: 70px;
+}
+
+.objects-button-prev, .kinds-button-prev {
 	left: 433px;
 	&:hover, &:active, &:focus {
 		background-image: url('../img/next.svg');
@@ -37,8 +49,35 @@
 	}
 }
 
-.swiper-button-next {
+.objects-button-next, .kinds-button-next {
 	right: 432px;
+	transform: rotate(180deg);
+	&:hover, &:active, &:focus {
+		background-image: url('../img/next.svg');
+		background-size: 18px 18px;
+		background-position: center center;
+		background-repeat: no-repeat;
+		transform: rotate(0deg);
+		border: 1px solid #000;
+	}
+}
+
+.warranty-button-prev {
+	left: 0;
+	right: auto;
+	&:hover, &:active, &:focus {
+		background-image: url('../img/next.svg');
+		background-size: 18px 18px;
+		background-position: center center;
+		background-repeat: no-repeat;
+		transform: rotate(180deg);
+		border: 1px solid #000;
+	}
+}
+
+.warranty-button-next {
+	right: 0;
+	left: 245px;
 	transform: rotate(180deg);
 	&:hover, &:active, &:focus {
 		background-image: url('../img/next.svg');

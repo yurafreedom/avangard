@@ -3,17 +3,17 @@ $(document).ready(function () {
 	  var objectSwiper = new Swiper ('#objects_slider', {
 		slidesPerView: 1,
 		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
+			nextEl: '.objects-button-next',
+			prevEl: '.objects-button-prev',
 		},
 		pagination: {
-			el: ".js--doctor-pag",
+			el: ".js--objects-pag",
 			clickable: true,
 		},
 	  });
         $(window).resize(function() {
-            mySwiper.update(true),
-            console.log("mySwiper update")
+            objectSwiper.update(true),
+            console.log("objectSwiper update")
         })
  }
 });
@@ -24,17 +24,37 @@ $(document).ready(function () {
         slidesPerView: 1,
         spaceBetween: 31,
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.kinds-button-next',
+            prevEl: '.kinds-button-prev',
         },
         pagination: {
-            el: ".js--doctor-pag",
+            el: ".js--kinds-pag",
             clickable: true,
         },
       });
         $(window).resize(function() {
-            mySwiper.update(true),
-            console.log("mySwiper update")
+            kindSwiper.update(true),
+            console.log("kindSwiper update")
+        })
+ }
+});
+
+$(document).ready(function () {
+ if( $(".swiper-container").length ) {
+      var warrantySwiper = new Swiper ('#warranty_slider', {
+        slidesPerView: 1,
+        navigation: {
+            nextEl: '.warranty-button-next',
+            prevEl: '.warranty-button-prev',
+        },
+        pagination: {
+            el: ".js--warranty-pag",
+            clickable: true,
+        },
+      });
+        $(window).resize(function() {
+            warrantySwiper.update(true),
+            console.log("warrantySwiper update")
         })
  }
 });

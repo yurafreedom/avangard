@@ -1,4 +1,5 @@
 .kinds-block {
+	padding-bottom: 160px;
 	&__title {
 		display: block;
 		text-align: center;
@@ -81,7 +82,7 @@
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-		margin-top: 67px;
+		margin-top: 60px;
 	}
 	&__pagination .swiper-pagination-bullet {
 		cursor: pointer;
@@ -96,5 +97,9 @@
 	}
 	&__pagination .swiper-pagination-bullet-active {
 		background-color: #FF6058;
+	}
+	&__wrapper .swiper-button-prev,
+	&__wrapper .swiper-button-next {
+		bottom: -30px;
 	}
 }
