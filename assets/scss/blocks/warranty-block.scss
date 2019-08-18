@@ -1,6 +1,9 @@
 .warranty-block {
 	padding-bottom: 160px;
-	&__wrapper .swiper-container {
+	&__wrapper .slider-wrapper {
+		display: flex;
+	}
+	.swiper-container {
 		overflow: auto;
 	}
 	&__wrapper {

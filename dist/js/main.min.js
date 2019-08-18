@@ -52,6 +52,11 @@ $(document).ready(function () {
             clickable: true,
         },
       });
+        var imageSwiper = new Swiper('#image_slider');
+
+        warrantySwiper.params.control = imageSwiper;
+        imageSwiper.params.control = warrantySwiper;
+        
         $(window).resize(function() {
             warrantySwiper.update(true),
             console.log("warrantySwiper update")
