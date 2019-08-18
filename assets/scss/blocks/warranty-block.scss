@@ -1,10 +1,12 @@
 .warranty-block {
 	padding-bottom: 160px;
-	&__wrapper .slider-wrapper {
+	.slider-wrapper {
 		display: flex;
 	}
-	.swiper-container {
-		overflow: auto;
+	#image_slider {
+		position: absolute;
+		right: -360px;
+		width: 780px;
 	}
 	&__wrapper {
 		position: relative;
@@ -68,8 +70,7 @@
 		position: relative;
 		width: 100%;
 		min-height: 503px;
-		border-top-left-radius: 5px;
-		border-bottom-left-radius: 5px;
+		border-radius: 5px;
 		overflow: hidden;
 		img {
 			position: absolute;

@@ -9356,14 +9356,16 @@ button.swiper-pagination-bullet {
 
 .warranty-block {
   padding-bottom: 160px; }
-  .warranty-block__wrapper .slider-wrapper {
+  .warranty-block .slider-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
     display: -ms-flexbox;
     display: flex; }
-  .warranty-block .swiper-container {
-    overflow: auto; }
+  .warranty-block #image_slider {
+    position: absolute;
+    right: -360px;
+    width: 780px; }
   .warranty-block__wrapper {
     position: relative;
     width: 1170px;
@@ -9420,12 +9422,9 @@ button.swiper-pagination-bullet {
     position: relative;
     width: 100%;
     min-height: 503px;
-    -webkit-border-top-left-radius: 5px;
-       -moz-border-radius-topleft: 5px;
-            border-top-left-radius: 5px;
-    -webkit-border-bottom-left-radius: 5px;
-       -moz-border-radius-bottomleft: 5px;
-            border-bottom-left-radius: 5px;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
     overflow: hidden; }
     .warranty-block__card-photo img {
       position: absolute;
