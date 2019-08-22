@@ -1,7 +1,771 @@
 @include for-size(mobile) {
+	.page-header {
+		padding-top: 15px;
+		padding-bottom: 0;
+		&__row {
+			padding-left: 15px;
+			padding-right: 20px;
+		}
+		&__logo {
+			padding-left: 0;
+			img {
+				width: 190px;
+				min-width: 190px;
+				height: 33px;
+				margin-bottom: 0;
+			}
+		}
+		&__toggle {
+			display: block;
+		}
+		&__tel-block {
+			display: none;
+		}
+	}
 
+	.main-block {
+		padding-bottom: 158px;
+		&__title {
+			margin-top: 40px;
+			font-size: 24px;
+			line-height: 1.20;
+			margin-bottom: 24px;
+		}
+		&__description {
+			font-size: 18px;
+			line-height: 1.167;
+			padding-top: 11px;
+			padding-left: 20px;
+			padding-bottom: 10px;
+			margin-bottom: 30px;
+		}
+		.btn--order {
+			font-size: 14px;
+			line-height: 1.2;
+			padding-top: 17px;
+			padding-bottom: 17px;
+		}
+		&__photo-block {
+			margin-top: 30px;
+			img {
+				left: auto;
+				right: 0;
+				width: 240px;
+				height: 110px;
+				right: -15px;
+			}
+		}
+	}
+
+	.regulations-block {
+		&__wrapper {
+			margin-top: -15px;
+			padding: 15px 15px 26px 15px;
+		}
+		.icon--fire-alarm {
+			margin-bottom: 19px;
+		}
+		&__content-text {
+			font-size: 18px;
+			&::before {
+				width: 260px;
+				height: 1px;
+				right: 0;
+				left: 0;
+				top: auto;
+				bottom: -26px;
+			}
+		}
+		&__content-title {
+			margin-top: 30px;
+			margin-bottom: 15px;
+			margin-left: 0;
+			font-size: 20px;
+			line-height: 1.2;
+			br {
+				display: none;
+			}
+		}
+		&__laws-block {
+			margin-left: 0;
+			font-size: 14px;
+			line-height: 1.2;
+		}
+	}
+
+	.requirements-block {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		&__title {
+			font-size: 24px;
+			line-height: 1.2;
+			padding-bottom: 0;
+			margin-bottom: 24px;
+			span {
+				padding-left: 4px;
+				padding-right: 4px;
+				margin-left: -4px;
+			}
+		}
+		&__card-icon {
+			margin-right: 15px;
+		}
+		&__card-title {
+			font-size: 18px;
+			line-height: 1.167;
+			margin-bottom: 16px;
+		}
+		&__card-list ul {
+			font-size: 14px;
+			line-height: 1.2;
+		}
+		&__card:not(:last-child) {
+			margin-bottom: 26px;
+		}
+		&__photo-block {
+			margin-top: 56px;
+			min-height: 105px;
+			img {
+				width: 305px;
+				height: 105px;
+			}
+		}
+	}
+
+	.availability-block {
+		padding-bottom: 40px;
+		&__title {
+			font-size: 24px;
+			line-height: 1.2;
+			margin-bottom: 24px;
+			span::after {
+				left: -4px;
+				width: 110px;
+			}
+		}
+		&__card {
+			padding: 30px 15px;
+			margin-bottom: 20px;
+		}
+		&__card-icon {
+			margin-left: 0;
+			margin-bottom: 30px;
+		}
+		&__card-title {
+			font-size: 18px;
+			line-height: 1.167;
+			margin-bottom: 16px;
+		}
+		&__card-text {
+			font-size: 14px;
+			line-height: 1.2;
+		}
+	}
+
+	.protect-block {
+		padding-bottom: 60px;
+		&__title {
+			font-size: 24px;
+			line-height: 1.2;
+			padding: 0;
+			margin-bottom: 24px;
+			span::before {
+				left: -2px;
+				width: 140px;
+			}
+		}
+		&__content-text {
+			font-size: 14px;
+			line-height: 1.2;
+		}
+		&__photo-block {
+			margin-top: 56px;
+			min-height: 105px;
+			img {
+				width: 305px;
+				height: 105px;
+			}
+		}
+	}
+
+	.save-block {
+		padding-bottom: 60px;
+		&__title {
+			font-size: 24px;
+			line-height: 1.2;
+			margin-bottom: 24px;
+			padding-bottom: 0;
+		}
+		&__list ul {
+			font-size: 14px;
+			line-height: 1.2;
+		}
+		&__list ul li {
+			&::before {
+				top: 4px;
+			}
+		}
+		.btn--stu {
+			margin-top: 36px;
+			font-size: 14px;
+			line-height: 1.2;
+			padding-top: 17px;
+			padding-bottom: 17px;
+		}
+	}
+
+	.objects-block {
+		padding-bottom: 56px;
+		#objects_slider {
+			width: calc(100% + 30px);
+			margin-left: -15px;
+		}
+		&__wrapper {
+			margin-bottom: 42px;
+		}
+		&__title {
+			font-size: 24px;
+			line-height: 1.2;
+			margin-bottom: 24px;
+		}
+		&__slide-photo {
+			height: 148px;
+			border-radius: 0;
+		}
+		&__pagination {
+			margin-top: 41px;
+		}
+		&__content-name {
+			font-size: 20px;
+			line-height: 1.2;
+			margin-bottom: 11px;
+		}
+		&__content-option {
+			margin-bottom: 9px;
+		}
+		&__content-article {
+			font-size: 14px;
+			line-height: 1.2;
+		}
+		&__content-value {
+			font-size: 14px;
+			line-height: 1.2;
+		}
+		&__content-wrapper {
+			margin-bottom: 15px;
+		}
+		&__content-text {
+			font-size: 14px;
+			line-height: 1.2;
+		}
+	}
+	
+	.kinds-block {
+		padding-bottom: 87px;
+		#kinds_slider .swiper-slide {
+			justify-content: flex-start;
+			padding-left: 15px;
+		}
+		&__title {
+			font-size: 24px;
+			line-height: 1.2;
+			margin-bottom: 47px;
+		}
+		&__card-block {
+			width: 290px;
+			padding: 30px 15px;
+			&:not(:first-child) {
+				display: none;
+			}
+		}
+		&__card-heading {
+			margin-bottom: 20px;
+		}
+		&__card-heading span {
+			font-size: 14px;
+		}
+		&__card-text {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 1.2;
+		}
+		&__card-price {
+			font-size: 18px;
+			line-height: 1.2;
+		}
+		&__card-from {
+			font-size: 18px;
+		}
+		&__pagination {
+			margin-top: 21px;
+		}
+	}
+
+	.warranty-block {
+		#image_slider {
+			width: 305px;
+			left: 0;
+			right: auto;
+			bottom: -74px;
+		}
+		&__card {
+			min-height: auto;
+		}
+		&__card-title {
+			font-size: 24px;
+			line-height: 1.2;
+			margin-bottom: 24px;
+			span.second::after {
+				width: 140px;
+			}
+		}
+		&__card-text {
+			font-size: 14px;
+			line-height: 1.2;
+		}
+		&__card-photo {
+			min-height: 197px;
+			img {
+				width: 305px;
+				height: 197px;
+				left: 15px;
+				border-top-left-radius: 10px;
+				border-bottom-left-radius: 10px;
+			}
+		}
+		&__card-text {
+			margin-bottom: 138px;
+		}
+		&__pagination {
+			bottom: -111px;
+		}
+	}
+	.objects-button-prev, .objects-button-next, .kinds-button-prev, .kinds-button-next, .warranty-button-prev, .warranty-button-next, .reviews-button-prev, .reviews-button-next {
+		width: 45px;
+		height: 45px;
+		background-size: 7px 14px;
+		bottom: 22px;
+	}
+	.objects-button-prev, .kinds-button-prev, .reviews-button-prev {
+		left: 15px;
+		&:hover, &:active, &:focus {
+			background-size: 14px 14px;
+		}
+	}
+	.objects-button-next, .kinds-button-next, .reviews-button-next {
+		right: 15px;
+		&:hover, &:active, &:focus {
+			background-size: 14px 14px;
+		}
+	}
+	.kinds-button-prev, .kinds-button-next {
+		bottom: -22px;
+	}
+	.warranty-button-prev, .warranty-button-next {
+		bottom: -132px;
+	}
+
+	.about-block {
+		padding-bottom: 90px;
+		&__background-block {
+			&::before {
+				height: 656px;
+				max-width: 305px;
+			}
+		}
+		.icon--building {
+			margin-top: 30px;
+			margin-bottom: 20px;
+		}
+		&__title {
+			font-size: 24px;
+			line-height: 1.2;
+			margin-bottom: 14px;
+		}
+		&__text {
+			font-size: 14px;
+			line-height: 1.2;
+		}
+		&__form {
+			margin-top: 16px;
+		}
+		&__input-wrapper {
+			max-width: 275px;
+			margin-bottom: 15px;
+		}
+		&__input-wrapper input.not-empty + label, 
+		&__input-wrapper input:focus + label {
+			margin-top: -14px;
+			font-size: 12px;
+			line-height: 1.2;
+		}
+		&__label {
+			top: 18px;
+			left: 13px;
+			font-size: 14px;
+			line-height: 1.2;
+		}
+		&__input {
+			padding-top: 20px;
+			padding-bottom: 14px;
+			font-size: 14px;
+			line-height: 1.2;
+		}
+		&__personal-info {
+			margin-top: 20px;
+			font-size: 12px;
+			line-height: 1.2;
+			margin-bottom: 37px;
+		}
+		.btn--send {
+			width: 275px;
+			font-size: 14px;
+			line-height: 1.2;
+			padding-top: 17px;
+			padding-bottom: 17px;
+		}
+	}
+
+	.stages-block {
+		&__title {
+			font-size: 24px;
+			line-height: 1.2;
+			margin-bottom: 24px;
+		}
+	}
 }
 
 @include for-size(tablet) {
-	
-} 
+	.page-header {
+		&__logo {
+			img {
+				width: 200px;
+				min-width: 200px;
+			}
+			span {
+				font-size: 11px;
+			}
+		}
+		&__phone-link {
+			font-size: 16px;
+			&:not(:last-child)::before {
+				height: 16px;
+			}
+		}
+	}
+
+	.main-block {
+		&__title {
+			font-size: 36px;
+		}
+		&__description {
+			font-size: 20px;
+		}
+		.btn--order {
+			padding-top: 25px;
+			padding-bottom: 26px;
+			font-size: 16px;
+		}
+		&__photo-block {
+			margin-top: 30px;
+		}
+		&__photo-block img {
+			left: auto;
+			right: -39px;
+			width: 540px;
+			height: 173px;
+		}
+	}
+
+	.regulations-block {
+		&__wrapper {
+			margin-top: -30px;
+			padding: 30px;
+		}
+		&__content-text {
+			font-size: 20px;
+			&::before {
+				display: none;
+			}
+			span::after {
+				top: 14px;
+				height: 16px;
+			}
+		}
+		&__content-title {
+			margin-top: 60px;
+			margin-left: 0;
+			font-size: 28px;
+		}
+		&__laws-block {
+			margin-left: 0;
+			font-size: 16px;
+		}
+	}
+
+	.requirements-block {
+		padding-top: 100px;
+		padding-bottom: 100px;
+		&__title {
+			margin-bottom: 60px;
+			font-size: 28px;
+		}
+		&__card-title {
+			font-size: 20px;
+		}
+		&__card-list ul {
+			font-size: 16px;
+		}
+		&__photo-block {
+			min-height: 238px;
+			margin-top: 70px;
+		}
+		&__photo-block img {
+			width: 100vw;
+			max-width: 1545px;
+			height: 238px;
+		}
+	}
+
+	.availability-block {
+		padding-bottom: 100px;
+		&__title {
+			font-size: 28px;
+			span::after {
+				width: 126px;
+			}
+		}
+		&__card {
+			margin-bottom: 30px;
+		}
+		&__card-icon {
+			margin-left: 0;
+		}
+		&__card-title {
+			text-align: center;
+		}
+		&__card-text {
+			text-align: center;
+			max-width: 100%;
+		}
+	}
+
+	.protect-block {
+		padding-bottom: 100px;
+		&__title {
+			font-size: 28px;
+			span::before {
+				left: -8px;
+				width: 164px;
+			}
+		}
+		&__content-text {
+			font-size: 16px;
+		}
+		&__photo-block {
+			margin-top: 90px;
+			min-height: 238px;
+		}
+		&__photo-block img {
+			width: 100vw;
+			height: 238px;
+		}
+	}
+
+	.save-block {
+		padding-bottom: 100px;
+		&__title {
+			font-size: 28px;
+		}
+		&__list ul {
+			font-size: 16px;
+		}
+	}
+	.objects-block {
+		padding-bottom: 100px;
+		&__title {
+			font-size: 28px;
+			margin-bottom: 60px;
+		}
+		&__slide-photo {
+			height: 340px;
+		}
+	}
+
+	.kinds-block {
+		&__title {
+			font-size: 28px;
+			span::before {
+				left: -3px;
+				width: 80px;
+			}
+		}
+		&__card-block {
+			width: 100%;
+			padding: 20px;
+			&:not(:last-child) {
+				margin-right: 0;
+				margin-bottom: 30px;
+			}
+		}
+		&__card-text {
+			font-size: 16px;
+		}
+		&__card-price {
+			font-size: 36px;
+		}
+	}
+
+	.warranty-block {
+		padding-bottom: 400px;
+		#image_slider {
+			left: 0;
+			bottom: -360px;
+			width: 100%;
+		}
+		&__card {
+			min-height: auto;
+		}
+		&__card-photo {
+			min-height: 300px;
+			border-radius: 0;
+		}
+		&__card-photo img {
+			width: 720px;
+			height: 300px;
+			object-fit: cover;
+			left: auto;
+			right: 0;
+			border-top-left-radius: 10px;
+			border-bottom-left-radius: 10px;
+		}
+		&__pagination {
+			bottom: 0;
+		}
+	}
+
+	.about-block {
+		padding-bottom: 160px;
+		&__background-block {
+			&::before {
+				height: 1121px;
+			}
+		}
+		.icon--building {
+			margin-top: 90px;
+		}
+		&__form {
+			margin-top: 60px;
+		}
+		&__input {
+			padding-top: 29px;
+		}
+	}
+
+	.stages-block {
+		padding-bottom: 100px;
+		&__title {
+			font-size: 28px;
+		}
+		&__card {
+			margin-bottom: 60px;
+		}
+		&__card-icon {
+			&::after {
+				right: 50px;
+			}
+		}
+		&__card-icon svg {
+			margin: 0;
+			margin-left: 50px;
+		}
+		&__photo-block {
+			margin-top: 60px;
+			min-height: 240px;
+			img {
+				height: 240px;
+				width: 100vw;
+			}
+		}
+	}
+
+	.reviews-block {
+		&__title {
+			font-size: 28px;
+		}
+		#reviews_slider .swiper-slide {
+			flex-wrap: wrap;
+			padding: 20px;
+			margin: 0 auto;
+		}
+		&__slide-photo {
+			margin-bottom: 30px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		&__slide-photo:not(:last-child) {
+			margin-right: 0;
+		}
+		&__slide-photo:not(:nth-child(2n)) {
+			margin-right: 60px;
+		}
+	}
+
+	.contacts-block {
+		&__content-block {
+			padding: 20px;
+		}
+		&__content-wrapper {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		&__card-block {
+			width: 300px;
+		}
+		&__card-block:not(:last-child) {
+			margin-right: 0;
+			margin-bottom: 60px;
+		}
+		&__card-block:not(:nth-child(2n)) {
+			margin-right: 60px;
+		}
+	}
+
+	.page-footer {
+		&__tel-block {
+			margin-bottom: 0;
+		}
+		&__phone-link {
+			font-size: 16px;
+			padding: 0;
+			&:not(:last-child) {
+				margin-right: 30px;
+			}
+			&:not(:last-child)::before {
+				right: -18px;
+			}
+		}
+		&__copyright {
+			margin-bottom: 0;
+			margin-right: 0;
+			padding-top: 0;
+			font-size: 14px;
+		}
+	}
+	#kinds_slider {
+		width: 100%;
+	}
+	#kinds_slider .swiper-slide {
+		flex-direction: column;
+		padding: 20px;
+	}
+	.objects-button-prev, .kinds-button-prev, .reviews-button-prev {
+		left: 213px;
+	}
+	.objects-button-next, .kinds-button-next, .reviews-button-next {
+		right: 212px;
+	}
+	.warranty-button-prev, .warranty-button-next {
+		bottom: -30px;
+	}
+}

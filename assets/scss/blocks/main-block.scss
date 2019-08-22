@@ -1,10 +1,10 @@
 .main-block {
 	overflow: hidden;
 	background-color: #FF6058;
-	padding-top: 81px;
 	padding-bottom: 250px;
 	&__title {
 		display: block;
+		margin-top: 66px;
 		margin-bottom: 52px;
 		font-size: 48px;
 		font-weight: 800;
@@ -16,9 +16,9 @@
 		display: block;
 		max-width: 500px;
 		width: 100%;
-		padding-top: 24px;
+		padding-top: 21px;
 		padding-left: 31px;
-		padding-bottom: 19px;
+		padding-bottom: 24px;
 		margin-bottom: 61px;
 		font-size: 30px;
 		line-height: 1.2;
@@ -46,6 +46,8 @@
 			width: 845px;
 			height: 583px;
 			object-fit: cover;
+			border-top-left-radius: 10px;
+			border-bottom-left-radius: 10px;
 		}
 	}
 }

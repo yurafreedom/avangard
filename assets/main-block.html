@@ -30,17 +30,17 @@
 					<div class="col-12">
 						<div class="regulations-block__wrapper">
 							<div class="row">
-								<div class="col-xl-7">
+								<div class="col-12 col-md-12 col-xl-7">
 									<svg width="100" height="100" class="icon--fire-alarm">
 										<use xlink:href="#fire_alarm"></use>
 									</svg>
 									<div class="regulations-block__content-text">
-										<p>Существуют единые правила пожарной безопасности. Для строений, которые им не соответствую правилам, нужны специальные технические условия.</p>
+										<p>Существуют <span>единые правила пожарной безопасности.</span> Для строений, которые им не соответствую правилам, нужны специальные технические условия.</p>
 										<p>Документ должен отражать специфику обеспечения пожарной безопасности в конкретном строении, а также комплекс инженерно-технических и организационных мероприятий по обеспечению пожарной безопасности.</p>
 									</div>
 								</div>
-								<div class="col-xl-4 offset-xl-1">
-									<div class="regulations-block__content-title">Нормы<br>законодательства</div>
+								<div class="col-12 col-md-12 offset-md-0 col-xl-4 offset-xl-1">
+									<div class="regulations-block__content-title">Нормы <br>законодательства</div>
 									<div class="regulations-block__laws-block">
 										<p>- статья 20 Федерального закона № 69- ФЗ от 21.12.94 «О пожарной безопасности»</p>
 										<p>- статья 78 Федерального закона от 22.07.2008 № 123-ФЗ «Технический регламент о требованиях пожарной безопасности».</p>
@@ -80,7 +80,7 @@
 							<div class="requirements-block__card">
 								<div class="requirements-block__card-icon">
 									<svg width="70" height="70">
-										<use xlink:href="#oil_well"></use>
+										<use xlink:href="#factory"></use>
 									</svg>
 								</div>
 								<div class="requirements-block__card-inner">
@@ -268,13 +268,31 @@
 										<div class="swiper-slide">
 											<div class="kinds-block__card-block">
 												<div class="kinds-block__card-heading">
+													<svg width="30" height="30">
+														<use xlink:href="#20_days"></use>
+													</svg>
+													<span>от 20 дней</span>
+												</div>
+												<div class="kinds-block__card-text">
+													<p>Подготовка проекта Технического задания на разработку СТУ, разработка стартовой редиакции СТУ</p>
+												</div>
+												<div class="kinds-block__card-inner">
+													<div class="kinds-block__card-price">
+														<span class="kinds-block__card-from">от</span>
+														<span class="kinds-block__card-num">180 000</span>
+														<span class="kinds-block__card-symbol">Р</span>
+													</div>
+												</div>
+											</div>
+											<div class="kinds-block__card-block">
+												<div class="kinds-block__card-heading">
 													<svg width="31" height="31">
 														<use xlink:href="#14_days"></use>
 													</svg>
 													<span>от 14 дней</span>
 												</div>
 												<div class="kinds-block__card-text">
-													<p>Подготовка проекта Технического задания на разработку СТУ, разработка стартовой редиакции СТУ</p>
+													<p>Доработка СТУ по замечаниям Заказчика, подготовка Пояснительной записки</p>
 												</div>
 												<div class="kinds-block__card-inner">
 													<div class="kinds-block__card-price">
@@ -293,24 +311,6 @@
 												</div>
 												<div class="kinds-block__card-text">
 													<p>Сопровождение согласования СТУ в Минстрое России. Сроки согласования СТУ Минстроем России могут быть перенесены с учетом внутреннего регламента министерства.</p>
-												</div>
-												<div class="kinds-block__card-inner">
-													<div class="kinds-block__card-price">
-														<span class="kinds-block__card-from">от</span>
-														<span class="kinds-block__card-num">180 000</span>
-														<span class="kinds-block__card-symbol">Р</span>
-													</div>
-												</div>
-											</div>
-											<div class="kinds-block__card-block">
-												<div class="kinds-block__card-heading">
-													<svg width="30" height="30">
-														<use xlink:href="#20_days"></use>
-													</svg>
-													<span>от 20 дней</span>
-												</div>
-												<div class="kinds-block__card-text">
-													<p>Доработка СТУ по замечаниям Заказчика, подготовка Пояснительной записки</p>
 												</div>
 												<div class="kinds-block__card-inner">
 													<div class="kinds-block__card-price">
@@ -513,6 +513,244 @@
 				</div>
 			</div>
 		</section>
+		<section class="about-block">
+			<div class="about-block__background-block">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-12 col-xl-5 d-flex">
+							<div class="about-block__content-block">
+								<svg width="90" height="90" class="icon--building">
+									<use xlink:href="#building"></use>
+								</svg>
+								<h2 class="about-block__title">Расскажите об объекте</h2>
+								<div class="about-block__text">
+									<p>Donec vitae sapien ut libero venenatis faucibus.<br>Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-12 col-xl-7 d-flex">
+							<form action="" class="about-block__form">
+								<div class="about-block__input-wrapper">
+									<input type="text" id="type" name="type" class="text-input about-block__input not-empty">
+									<label for="type" class="about-block__label">Тип объекта</label>
+								</div>
+								<div class="about-block__input-wrapper">
+									<input type="text" id="floor" name="floor" class="text-input about-block__input not-empty">
+									<label for="floor" class="about-block__label">Этажность</label>
+								</div>
+								<div class="about-block__input-wrapper">
+									<input type="text" id="height" name="height" class="text-input about-block__input not-empty">
+									<label for="height" class="about-block__label">Высота</label>
+								</div>
+								<div class="about-block__input-wrapper">
+									<input type="text" id="complexity" name="complexity" class="text-input about-block__input not-empty">
+									<label for="complexity" class="about-block__label">Сложность архитектурных решений</label>
+								</div>
+								<span class="about-block__personal-info">Нажав на кнопку, я даю согласие на обработку персональных данных</span>
+								<button class="btn btn--send" type="submit">Отправить</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="stages-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="stages-block__title">Этапы разработки СТУ</h2>
+					</div>
+					<div class="col-6 col-md-6 col-xl-2">
+						<div class="stages-block__card">
+							<div class="stages-block__card-body">
+								<div class="stages-block__card-icon">
+									<svg width="80" height="80">
+										<use xlink:href="#contact"></use>
+									</svg>
+								</div>
+								<div class="stages-block__card-inner">
+									<span class="stages-block__card-num">1</span>
+									<div class="stages-block__card-title">Получение заявки</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-6 col-xl-2">
+						<div class="stages-block__card">
+							<div class="stages-block__card-body">
+								<div class="stages-block__card-icon">
+									<svg width="80" height="80">
+										<use xlink:href="#file"></use>
+									</svg>
+								</div>
+								<div class="stages-block__card-inner">
+									<span class="stages-block__card-num">2</span>
+									<div class="stages-block__card-title">Сбор информации</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-6 col-xl-2">
+						<div class="stages-block__card">
+							<div class="stages-block__card-body">
+								<div class="stages-block__card-icon">
+									<svg width="80" height="80">
+										<use xlink:href="#checklist"></use>
+									</svg>
+								</div>
+								<div class="stages-block__card-inner">
+									<span class="stages-block__card-num">3</span>
+									<div class="stages-block__card-title">Согласование технических решений</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-6 col-xl-2">
+						<div class="stages-block__card">
+							<div class="stages-block__card-body">
+								<div class="stages-block__card-icon">
+									<svg width="80" height="80">
+										<use xlink:href="#contract"></use>
+									</svg>
+								</div>
+								<div class="stages-block__card-inner">
+									<span class="stages-block__card-num">4</span>
+									<div class="stages-block__card-title">Подписание договора</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-6 col-xl-2">
+						<div class="stages-block__card">
+							<div class="stages-block__card-body">
+								<div class="stages-block__card-icon">
+									<svg width="80" height="80">
+										<use xlink:href="#sketch"></use>
+									</svg>
+								</div>
+								<div class="stages-block__card-inner">
+									<span class="stages-block__card-num">5</span>
+									<div class="stages-block__card-title">Разработка СТУ</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-6 col-xl-2">
+						<div class="stages-block__card">
+							<div class="stages-block__card-body">
+								<div class="stages-block__card-icon none">
+									<svg width="80" height="80">
+										<use xlink:href="#handshake"></use>
+									</svg>
+								</div>
+								<div class="stages-block__card-inner">
+									<span class="stages-block__card-num">6</span>
+									<div class="stages-block__card-title">Получение положительного заключения от МЧС и органа госэкспертизы</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="stages-block__photo-block">
+							<img src="img/stages-photo.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="reviews-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="reviews-block__title-wrapper">
+							<h2 class="reviews-block__title">Отзывы</h2>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="reviews-block__wrapper">
+							<div class="slider-wrapper">
+								<div class="reviews-button-prev"></div>
+								<div id="reviews_slider" class="swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="reviews-block__slide-photo" style="background-image: url(img/review-photo-1.png);"></div>
+											<div class="reviews-block__slide-photo" style="background-image: url(img/review-photo-2.png);"></div>
+											<div class="reviews-block__slide-photo" style="background-image: url(img/review-photo-3.png);"></div>
+											<div class="reviews-block__slide-photo" style="background-image: url(img/review-photo-4.png);"></div>
+										</div>
+										<div class="swiper-slide">
+											<div class="reviews-block__slide-photo" style="background-image: url(img/review-photo-1.png);"></div>
+											<div class="reviews-block__slide-photo" style="background-image: url(img/review-photo-2.png);"></div>
+											<div class="reviews-block__slide-photo" style="background-image: url(img/review-photo-3.png);"></div>
+											<div class="reviews-block__slide-photo" style="background-image: url(img/review-photo-4.png);"></div>	
+										</div>
+										<div class="swiper-slide">
+											<div class="reviews-block__slide-photo" style="background-image: url(img/review-photo-1.png);"></div>
+											<div class="reviews-block__slide-photo" style="background-image: url(img/review-photo-2.png);"></div>
+											<div class="reviews-block__slide-photo" style="background-image: url(img/review-photo-3.png);"></div>
+											<div class="reviews-block__slide-photo" style="background-image: url(img/review-photo-4.png);"></div>
+										</div>
+									</div>
+								</div>
+								<div class="reviews-button-next"></div>
+							</div>
+							<div class="slider-pag-block">
+								<div class="reviews-block__pagination js--reviews-pag"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="contacts-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="contacts-block__content-block">
+							<h2 class="contacts-block__title">Контакты</h2>
+							<div class="contacts-block__content-wrapper">
+								<div class="contacts-block__card-block">
+									<div class="contacts-block__card-icon">
+										<img src="img/contacts-point.svg" alt="">
+									</div>
+									<div class="contacts-block__card-inner">
+										<span class="contacts-block__inner-text">г. Краснодар, переулок<br>Константиновский, 26, Литер З</span>
+									</div>
+								</div>
+								<div class="contacts-block__card-block">
+									<div class="contacts-block__card-icon">
+										<img src="img/contacts-call.svg" alt="">
+									</div>
+									<div class="contacts-block__card-inner">
+										<a href="tel:+78612034543" class="contacts-block__inner-text">+7 (861) 203-45-43</a>
+										<a href="tel:+79184888675" class="contacts-block__inner-text">+7 (918) 488-86-75</a>
+									</div>
+								</div>
+								<div class="contacts-block__card-block">
+									<div class="contacts-block__card-icon">
+										<img src="img/contacts-email.svg" alt="">
+									</div>
+									<div class="contacts-block__card-inner">
+										<a href="mailto:info@safemir.ru" class="contacts-block__inner-text">info@safemir.ru</a>
+									</div>
+								</div>
+								<div class="contacts-block__card-block">
+									<div class="contacts-block__card-icon">
+										<img src="img/contacts-clock.svg" alt="">
+									</div>
+									<div class="contacts-block__card-inner">
+										<span class="contacts-block__inner-text">Пн.-Пт.<br> 09:00 - 18:00</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="avangard_map" class="contacts-block__map-block"></div>
+		</section>
 	</div>
 	@@include('template/page-footer.html')
 </div>
@@ -520,6 +758,35 @@
 @@include('template/sprite.html')
 @@include('template/popups.html')
 @@include('template/scripts.html')
+<script src="https://api-maps.yandex.ru/2.1/?load=package.full&amp;lang=ru-RU"></script>
+<script>
+	ymaps.ready(init);
 
+	var map;
+
+	function init() {
+
+		map = new ymaps.Map ("avangard_map", {
+		center: [45.03100507458392,38.97291449999995],
+		zoom: 16
+		});
+
+		map.behaviors.disable('scrollZoom'); 
+
+		var saleOffice = new ymaps.Placemark([45.025709764975765,38.957464976074185], {}, {
+		iconLayout: 'default#image',
+		// Своё изображение иконки метки.
+		iconImageHref: 'img/map-point.svg',
+		// Размеры метки.
+		iconImageSize: [70, 100],
+		// Смещение левого верхнего угла иконки относительно
+		// её "ножки" (точки привязки).
+		iconImageOffset: [-16, -18]
+		});
+
+		map.geoObjects.add(saleOffice);
+
+	}
+</script>
 </body>
 </html>

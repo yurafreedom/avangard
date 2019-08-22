@@ -5,7 +5,7 @@
 		background-color: #fff;
 		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
 		border-radius: 10px;
-		padding: 70px 70px 30px 70px;
+		padding: 70px 70px 38px 70px;
 	}
 	.icon--fire-alarm {
 		display: block;
@@ -25,18 +25,22 @@
 		&::before {
 			content: '';
 			position: absolute;
-			top: 0;
-			right: -65px;
+			top: 6px;
+			right: -78px;
 			width: 1px;
 			height: 100%;
 			background-color: #E0E0E0;
 		}
+	}
+	&__content-text span {
+		position: relative;
 		&::after {
 			content: '';
 			position: absolute;
-			top: 22px;
+			top: 18px;
 			right: 2px;
-			width: 450px;
+			width: calc(100% + 4px);
+			margin-right: -4px;
 			height: 20px;
 			background-color: #FFFA7E;
 			z-index: -1;
@@ -44,7 +48,7 @@
 	}
 	&__content-text p {
 		margin: 0;
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 	}
 	&__content-title {
 		display: block;
@@ -53,6 +57,7 @@
 		font-weight: 700;
 		line-height: 1.2;
 		color: #333;
+		margin-left: 23px;
 		margin-bottom: 36px;
 	}
 	&__laws-block {
@@ -61,9 +66,12 @@
 		line-height: 1.67;
 		font-weight: 400;
 		color: $gray-color;
+		margin-left: 23px;
 	}
 	&__laws-block p {
 		margin: 0;
-		margin-bottom: 20px;
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
 	}
 }

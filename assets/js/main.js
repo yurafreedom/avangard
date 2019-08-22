@@ -54,11 +54,11 @@ $(document).ready(function () {
       });
         var imageSwiper = new Swiper('#image_slider', {
             slidesPerView: 1,
-            spaceBetween: 20
+            spaceBetween: 20,
         });
 
-        warrantySwiper.params.control = imageSwiper;
-        imageSwiper.params.control = warrantySwiper;
+        warrantySwiper.controller.control = imageSwiper;
+        imageSwiper.controller.control = warrantySwiper;
 
         $(window).resize(function() {
             warrantySwiper.update(true),
@@ -67,31 +67,34 @@ $(document).ready(function () {
  }
 });
 
-// var objectSwiper = new Swiper ('#objects_slider', {
-//     slidesPerView: 1,
-//     spaceBetween: 20,
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev',
-//     },
-//     pagination: {
-//         el: ".js--doctor-pag",
-//         clickable: true,
-//     },
-// });
+$(document).ready(function () {
+ if( $(".swiper-container").length ) {
+      var reviewSwiper = new Swiper ('#reviews_slider', {
+        slidesPerView: 1,
+        navigation: {
+            nextEl: '.reviews-button-next',
+            prevEl: '.reviews-button-prev',
+        },
+        pagination: {
+            el: ".js--reviews-pag",
+            clickable: true,
+        },
+      });
+        $(window).resize(function() {
+            kindSwiper.update(true),
+            console.log("reviewSwiper update")
+        })
+ }
+});
 
-// var kindSwiper = new Swiper ('#kinds_slider', {
-//     slidesPerView: 1,
-//     spaceBetween: 31,
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev',
-//     },
-//     pagination: {
-//         el: ".js--doctor-pag",
-//         clickable: true,
-//     },
-// });
+$(".about-block__input").each(function(e) {
+    "" != $(this).val() ? $(this).addClass("not-empty") : $(this).removeClass("not-empty")
+}),
+
+$(".about-block__input").on("change focusout keydown", function() {
+    "" != $(this).val() ? $(this).addClass("not-empty") : $(this).removeClass("not-empty")
+})
+
 
 $("form").each(function() {
     $(this).validate({

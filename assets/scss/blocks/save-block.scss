@@ -12,6 +12,7 @@
 		line-height: 1.278;
 		font-weight: 700;
 		color: #333;
+		padding-bottom: 11px;
 	}
 	&__title span {
 		position: relative;
@@ -45,8 +46,8 @@
 		&::before {
 			content: '';
 			position: absolute;
-			top: 12px;
-			left: -20px;
+			top: 11px;
+			left: -27px;
 			width: 7px;
 			height: 7px;
 			border-radius: 50%;
@@ -54,7 +55,7 @@
 		}
 	}
 	&__list ul li:not(:last-child) {
-		margin-bottom: 14px;
+		margin-bottom: 15px;
 	}
 	.btn--stu {
 		margin-top: 91px;

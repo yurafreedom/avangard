@@ -1,5 +1,6 @@
 .warranty-block {
-	padding-bottom: 160px;
+	overflow: hidden;
+	padding-bottom: 190px;
 	.slider-wrapper {
 		display: flex;
 	}
@@ -16,6 +17,14 @@
 	&__card {
 		display: flex;
 		width: 100%;
+		min-height: 503px;
+	}
+	&__card-inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		max-width: 570px;
+		padding-left: 3px;
 	}
 	&__card-title {
 		display: block;
@@ -52,9 +61,6 @@
 			z-index: -1;
 		}
 	}
-	&__card-inner {
-		margin-right: 193px;
-	}
 	&__card-text {
 		display: block;
 		margin-bottom: 91px;
@@ -70,8 +76,9 @@
 		position: relative;
 		width: 100%;
 		min-height: 503px;
-		border-radius: 5px;
+		border-radius: 10px;
 		overflow: hidden;
+		margin-top: 30px;
 		img {
 			position: absolute;
 			left: 0;
@@ -82,9 +89,9 @@
 
 	&__pagination {
 		position: absolute;
-		left: 80px;
+		left: 97px;
 		top: auto;
-		bottom: 100px;
+		bottom: 70px;
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
