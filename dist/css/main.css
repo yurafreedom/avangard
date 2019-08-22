@@ -7047,7 +7047,7 @@ button.swiper-pagination-bullet {
   .btn:active, .btn:focus, .btn:hover {
     text-decoration: none !important;
     outline: none !important;
-    box-shadow: none !important; }
+    box-shadow: none; }
 
 .btn--order {
   width: 280px; }
@@ -7064,6 +7064,11 @@ button.swiper-pagination-bullet {
   line-height: 1.167;
   padding-top: 25px;
   padding-bottom: 24px; }
+  .btn--stu:hover, .btn--stu:active, .btn--stu:focus {
+    background-color: #fff;
+    color: #FF6058;
+    box-shadow: 0px 0px 20px rgba(120, 120, 120, 0.3);
+    border-radius: 10px; }
 
 .main-page-wrap {
   position: relative;
