@@ -32,6 +32,8 @@
 	&__card-icon svg {
 		display: block;
 		margin: 0 auto;
+		width: 80px;
+		height: 80px;
 	}
 	&__card-inner {
 		display: flex;
@@ -60,14 +62,14 @@
 		display: block;
 		min-height: 530px;
 		margin-top: 160px;
-		border-top-left-radius: 10px;
-		border-bottom-left-radius: 10px;
 		img {
 			position: absolute;
 			left: 0;
 			width: 1545px;
 			height: 530px;
 			object-fit: contain;
+			border-top-left-radius: 10px;
+			border-bottom-left-radius: 10px;
 		}
 	}
 }

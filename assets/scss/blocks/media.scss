@@ -17,6 +17,7 @@
 		}
 		&__toggle {
 			display: block;
+			padding-bottom: 4px;
 		}
 		&__tel-block {
 			display: none;
@@ -28,22 +29,23 @@
 		&__title {
 			margin-top: 40px;
 			font-size: 24px;
-			line-height: 1.20;
+			line-height: 1.22;
 			margin-bottom: 24px;
 		}
 		&__description {
 			font-size: 18px;
 			line-height: 1.167;
-			padding-top: 11px;
-			padding-left: 20px;
+			padding-top: 7px;
+			padding-left: 25px;
 			padding-bottom: 10px;
 			margin-bottom: 30px;
 		}
 		.btn--order {
+			width: 100%;
 			font-size: 14px;
 			line-height: 1.2;
-			padding-top: 17px;
-			padding-bottom: 17px;
+			padding-top: 16px;
+			padding-bottom: 18px;
 		}
 		&__photo-block {
 			margin-top: 30px;
@@ -53,31 +55,35 @@
 				width: 240px;
 				height: 110px;
 				right: -15px;
+				object-fit: cover;
 			}
 		}
 	}
 
 	.regulations-block {
 		&__wrapper {
-			margin-top: -15px;
+			margin-top: -18px;
 			padding: 15px 15px 26px 15px;
 		}
 		.icon--fire-alarm {
 			margin-bottom: 19px;
+			width: 80px;
+			height: 80px;
 		}
 		&__content-text {
 			font-size: 18px;
+			line-height: 1.2;
 			&::before {
 				width: 260px;
 				height: 1px;
 				right: 0;
 				left: 0;
 				top: auto;
-				bottom: -26px;
+				bottom: -48px;
 			}
 		}
 		&__content-title {
-			margin-top: 30px;
+			margin-top: 58px;
 			margin-bottom: 15px;
 			margin-left: 0;
 			font-size: 20px;
@@ -98,7 +104,7 @@
 		padding-bottom: 60px;
 		&__title {
 			font-size: 24px;
-			line-height: 1.2;
+			line-height: 1.25;
 			padding-bottom: 0;
 			margin-bottom: 24px;
 			span {
@@ -109,6 +115,10 @@
 		}
 		&__card-icon {
 			margin-right: 15px;
+			svg {
+				width: 50px;
+				height: 50px;
+			}
 		}
 		&__card-title {
 			font-size: 18px;
@@ -120,10 +130,10 @@
 			line-height: 1.2;
 		}
 		&__card:not(:last-child) {
-			margin-bottom: 26px;
+			margin-bottom: 45px;
 		}
 		&__photo-block {
-			margin-top: 56px;
+			margin-top: 76px;
 			min-height: 105px;
 			img {
 				width: 305px;
@@ -144,21 +154,29 @@
 			}
 		}
 		&__card {
+			height: 361px;
 			padding: 30px 15px;
 			margin-bottom: 20px;
 		}
 		&__card-icon {
 			margin-left: 0;
 			margin-bottom: 30px;
+			&::after {
+				bottom: -2px;
+			}
+		}
+		&__card-icon svg {
+			width: 50px;
+			height: 50px;
 		}
 		&__card-title {
 			font-size: 18px;
-			line-height: 1.167;
-			margin-bottom: 16px;
+			line-height: 1.3;
+			margin-bottom: 15px;
 		}
 		&__card-text {
 			font-size: 14px;
-			line-height: 1.2;
+			line-height: 1.22;
 		}
 	}
 
@@ -166,7 +184,7 @@
 		padding-bottom: 60px;
 		&__title {
 			font-size: 24px;
-			line-height: 1.2;
+			line-height: 1.28;
 			padding: 0;
 			margin-bottom: 24px;
 			span::before {
@@ -176,7 +194,8 @@
 		}
 		&__content-text {
 			font-size: 14px;
-			line-height: 1.2;
+			line-height: 1.22;
+			padding-left: 2px;
 		}
 		&__photo-block {
 			margin-top: 56px;
@@ -192,25 +211,28 @@
 		padding-bottom: 60px;
 		&__title {
 			font-size: 24px;
-			line-height: 1.2;
+			line-height: 1.24;
 			margin-bottom: 24px;
 			padding-bottom: 0;
 		}
 		&__list ul {
 			font-size: 14px;
-			line-height: 1.2;
+			line-height: 1.26;
+			padding-left: 25px;
 		}
 		&__list ul li {
 			&::before {
 				top: 4px;
+				left: -25px;
 			}
 		}
 		.btn--stu {
+			width: 100%;
 			margin-top: 36px;
 			font-size: 14px;
 			line-height: 1.2;
-			padding-top: 17px;
-			padding-bottom: 17px;
+			padding-top: 16px;
+			padding-bottom: 18px;
 		}
 	}
 
@@ -256,19 +278,22 @@
 		}
 		&__content-text {
 			font-size: 14px;
-			line-height: 1.2;
+			line-height: 1.278;
 		}
 	}
 	
 	.kinds-block {
 		padding-bottom: 87px;
+		#kinds_slider {
+			margin-left: 0;
+			margin-right: 0;
+		}
 		#kinds_slider .swiper-slide {
 			justify-content: flex-start;
-			padding-left: 15px;
 		}
 		&__title {
 			font-size: 24px;
-			line-height: 1.2;
+			line-height: 1.3;
 			margin-bottom: 47px;
 		}
 		&__card-block {
@@ -277,9 +302,12 @@
 			&:not(:first-child) {
 				display: none;
 			}
+			&:not(:last-child) {
+				margin-right: 0;
+			}
 		}
 		&__card-heading {
-			margin-bottom: 20px;
+			margin-bottom: 23px;
 		}
 		&__card-heading span {
 			font-size: 14px;
@@ -288,13 +316,15 @@
 			font-weight: 400;
 			font-size: 14px;
 			line-height: 1.2;
+			margin-bottom: 51px;
 		}
 		&__card-price {
-			font-size: 18px;
+			font-size: 36px;
 			line-height: 1.2;
 		}
 		&__card-from {
 			font-size: 18px;
+			margin-right: 9px;
 		}
 		&__pagination {
 			margin-top: 21px;
@@ -304,7 +334,7 @@
 	.warranty-block {
 		#image_slider {
 			width: 305px;
-			left: 0;
+			left: 15px;
 			right: auto;
 			bottom: -74px;
 		}
@@ -321,30 +351,38 @@
 		}
 		&__card-text {
 			font-size: 14px;
-			line-height: 1.2;
+			line-height: 1.28;
 		}
 		&__card-photo {
 			min-height: 197px;
 			img {
 				width: 305px;
 				height: 197px;
-				left: 15px;
 				border-top-left-radius: 10px;
 				border-bottom-left-radius: 10px;
 			}
+		}
+		&__card-inner {
+			padding-left: 0;
 		}
 		&__card-text {
 			margin-bottom: 138px;
 		}
 		&__pagination {
-			bottom: -111px;
+			bottom: -119px;
+			left: 88px;
 		}
 	}
+
+	#kinds_slider {
+		width: 100%;
+	}
+
 	.objects-button-prev, .objects-button-next, .kinds-button-prev, .kinds-button-next, .warranty-button-prev, .warranty-button-next, .reviews-button-prev, .reviews-button-next {
 		width: 45px;
 		height: 45px;
 		background-size: 7px 14px;
-		bottom: 22px;
+		bottom: 21px;
 	}
 	.objects-button-prev, .kinds-button-prev, .reviews-button-prev {
 		left: 15px;
@@ -362,19 +400,35 @@
 		bottom: -22px;
 	}
 	.warranty-button-prev, .warranty-button-next {
-		bottom: -132px;
+		bottom: -140px;
+	}
+	.warranty-button-prev {
+		left: 15px;
+	}
+	.warranty-button-next {
+		right: 15px;
+		left: auto;
+	}
+	.reviews-button-prev, .reviews-button-next {
+		bottom: -21px;
 	}
 
 	.about-block {
 		padding-bottom: 90px;
 		&__background-block {
 			&::before {
-				height: 656px;
+				top: 10px;
+				height: 620px;
 				max-width: 305px;
 			}
 		}
+		&__content-block {
+			padding-left: 0;
+		}
 		.icon--building {
-			margin-top: 30px;
+			width: 50px;
+			height: 50px;
+			margin-top: 40px;
 			margin-bottom: 20px;
 		}
 		&__title {
@@ -384,7 +438,7 @@
 		}
 		&__text {
 			font-size: 14px;
-			line-height: 1.2;
+			line-height: 1.28;
 		}
 		&__form {
 			margin-top: 16px;
@@ -406,8 +460,9 @@
 			line-height: 1.2;
 		}
 		&__input {
-			padding-top: 20px;
-			padding-bottom: 14px;
+			padding-top: 26px;
+			padding-left: 13px;
+			padding-bottom: 8px;
 			font-size: 14px;
 			line-height: 1.2;
 		}
@@ -427,9 +482,10 @@
 	}
 
 	.stages-block {
+		padding-bottom: 60px;
 		&__title {
 			font-size: 24px;
-			line-height: 1.2;
+			line-height: 1.3;
 			margin-bottom: 24px;
 		}
 		&__photo-block {
@@ -440,11 +496,46 @@
 				height: 105px;
 			}
 		}
+		&__card {
+			margin-bottom: 26px;
+		}
+		&__card-icon {
+			margin-left: -31px;
+			margin-bottom: 24px;
+			&::after {
+				top: 24px;
+				right: -20px;
+				width: 50px;
+			}
+			svg {
+				width: 50px;
+				height: 50px;
+			}
+		}
+		&__card-num {
+			font-size: 30px;
+			top: -14px;
+		}
+		&__card-title {
+			font-size: 14px;
+			line-height: 1.2;
+			padding-left: 5px;
+		}
+		&__photo-block {
+			margin-top: 39px;
+		}
 	}
 
 	.reviews-block {
-		padding-bottom: 255px;
+		padding-bottom: 277px;
+		&__title {
+			font-size: 24px;
+			line-height: 1.3;
+			margin-bottom: 24px;
+		}
 		&__slide-photo {
+			width: 290px;
+			height: 410px;
 			&:not(:first-child) {
 				display: none;
 			}
@@ -453,7 +544,7 @@
 			}
 		}
 		&__pagination {
-			margin-top: 41px;
+			margin-top: 40px;
 		}
 	}
 
@@ -474,11 +565,12 @@
 			font-size: 24px;
 			line-height: 1.2;
 			margin-bottom: 24px;
+			padding-left: 0;
 		}
 		&__card-block {
 			&:not(:last-child) {
 				margin-right: 0;
-				margin-bottom: 16px;
+				margin-bottom: 18px;
 			}
 		}
 		&__card-icon {
@@ -486,7 +578,7 @@
 		}
 		&__inner-text {
 			font-size: 14px;
-			line-height: 1.2;
+			line-height: 1.278;
 		}
 		&__map-block {
 			height: 430px;
@@ -494,8 +586,58 @@
 	}
 
 	.page-footer {
+		padding-top: 28px;
+		padding-bottom: 30px;
+		&__top-part {
+			padding-bottom: 27px;
+			margin-bottom: 14px;
+		}
 		&__top-part &__wrapper {
-			display: block;
+			flex-direction: column;
+		}
+		&__tel-block {
+			margin-top: 30px;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		&__phone-link {
+			font-size: 14px;
+			line-height: 1.2;
+			&:not(:last-child) {
+				margin-right: 38px;
+			}
+			&:not(:last-child)::before {
+				top: 0;
+				right: -21px;
+				height: 17px;
+			}
+		}
+		&__copyright {
+			font-size: 14px;
+			line-height: 1.2;
+			padding-top: 6px;
+			margin-bottom: 0;
+			margin-right: 0;
+		}
+		&__bottom-part &__wrapper {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		&__privacy-link {
+			margin-left: 0;
+			font-size: 14px;
+			line-height: 1.2;
+		}
+		&__author-link {
+			padding-top: 2px;
+			margin-right: 0;
+			font-size: 14px;
+			line-height: 1.2;
+			text-align: right;
+			color: rgba(255,255,255,0.95);
+			span {
+				margin-right: 0;
+			}
 		}
 	}
 }
