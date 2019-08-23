@@ -154,8 +154,8 @@
 			}
 		}
 		&__card {
-			height: 361px;
-			padding: 30px 15px;
+			min-height: 361px;
+			padding: 30px 15px 24px 15px;
 			margin-bottom: 20px;
 		}
 		&__card-icon {

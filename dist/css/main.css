@@ -8366,8 +8366,8 @@ button.swiper-pagination-bullet {
         left: -4px;
         width: 110px; }
     .availability-block__card {
-      height: 361px;
-      padding: 30px 15px;
+      min-height: 361px;
+      padding: 30px 15px 24px 15px;
       margin-bottom: 20px; }
     .availability-block__card-icon {
       margin-left: 0;
