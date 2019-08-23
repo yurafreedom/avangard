@@ -96,28 +96,28 @@ $(".about-block__input").on("change focusout keydown", function() {
 })
 
 
-$("form").each(function() {
-    $(this).validate({
-        errorPlacement: function(e, i) {
-              e.addClass("error-message"),
-              e.appendTo(i.parent("div"))
-        },
-        highlight: function(e) {
-            $(e).addClass("has-error").parent().addClass("has-error");
-        },
-        unhighlight: function(e) {
-            $(e).removeClass("has-error").parent().removeClass("has-error");
-        },
-        ignore: [],
-        rules: {
-            name: "required",
-            tel: {
-                required: !0
-            },
-            email: {
-                required: !0,
-                email: true
-            }
-        },
-    });
-});
+// $("form").each(function() {
+//     $(this).validate({
+//         errorPlacement: function(e, i) {
+//               e.addClass("error-message"),
+//               e.appendTo(i.parent("div"))
+//         },
+//         highlight: function(e) {
+//             $(e).addClass("has-error").parent().addClass("has-error");
+//         },
+//         unhighlight: function(e) {
+//             $(e).removeClass("has-error").parent().removeClass("has-error");
+//         },
+//         ignore: [],
+//         rules: {
+//             name: "required",
+//             tel: {
+//                 required: !0
+//             },
+//             email: {
+//                 required: !0,
+//                 email: true
+//             }
+//         },
+//     });
+// });

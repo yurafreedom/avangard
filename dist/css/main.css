@@ -8186,7 +8186,11 @@ button.swiper-pagination-bullet {
     font-weight: 400;
     line-height: 1.2;
     color: #fff;
-    padding-bottom: 22px; }
+    padding-bottom: 22px;
+    transition: all 0.3s ease-in-out; }
+    .page-footer__phone-link:hover, .page-footer__phone-link:active, .page-footer__phone-link:focus {
+      color: #FF6058;
+      text-decoration: none; }
     .page-footer__phone-link:not(:last-child) {
       margin-right: 61px; }
     .page-footer__phone-link:not(:last-child)::before {
@@ -8213,14 +8217,22 @@ button.swiper-pagination-bullet {
     font-weight: 400;
     line-height: 1.2;
     color: #fff;
-    text-decoration: underline; }
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out; }
+    .page-footer__privacy-link:hover, .page-footer__privacy-link:active, .page-footer__privacy-link:focus {
+      color: #fff;
+      text-decoration: none; }
   .page-footer__author-link {
     display: inline-block;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.2;
     color: #fff;
-    margin-right: 11px; }
+    margin-right: 11px;
+    transition: all 0.3s ease-in-out; }
+    .page-footer__author-link:hover, .page-footer__author-link:active, .page-footer__author-link:focus {
+      color: #fff;
+      text-decoration: none; }
     .page-footer__author-link span {
       margin-right: 11px; }
 
@@ -8540,7 +8552,47 @@ button.swiper-pagination-bullet {
   .stages-block__title {
     font-size: 24px;
     line-height: 1.2;
-    margin-bottom: 24px; } }
+    margin-bottom: 24px; }
+  .stages-block__photo-block {
+    margin-top: 56px;
+    min-height: 105px; }
+    .stages-block__photo-block img {
+      width: 305px;
+      height: 105px; }
+  .reviews-block {
+    padding-bottom: 255px; }
+    .reviews-block__slide-photo:not(:first-child) {
+      display: none; }
+    .reviews-block__slide-photo:not(:last-child) {
+      margin-right: 0; }
+    .reviews-block__pagination {
+      margin-top: 41px; }
+  .contacts-block__content-wrapper {
+    display: block; }
+  .contacts-block__content-block {
+    max-width: 290px;
+    left: 15px;
+    margin-top: -195px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 26px; }
+  .contacts-block__title {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 24px; }
+  .contacts-block__card-block:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 16px; }
+  .contacts-block__card-icon {
+    margin-right: 11px; }
+  .contacts-block__inner-text {
+    font-size: 14px;
+    line-height: 1.2; }
+  .contacts-block__map-block {
+    height: 430px; }
+  .page-footer__top-part .page-footer__wrapper {
+    display: block; } }
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .page-header__logo img {

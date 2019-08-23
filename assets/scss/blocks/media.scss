@@ -432,6 +432,71 @@
 			line-height: 1.2;
 			margin-bottom: 24px;
 		}
+		&__photo-block {
+			margin-top: 56px;
+			min-height: 105px;
+			img {
+				width: 305px;
+				height: 105px;
+			}
+		}
+	}
+
+	.reviews-block {
+		padding-bottom: 255px;
+		&__slide-photo {
+			&:not(:first-child) {
+				display: none;
+			}
+			&:not(:last-child) {
+				margin-right: 0;
+			}
+		}
+		&__pagination {
+			margin-top: 41px;
+		}
+	}
+
+	.contacts-block {
+		&__content-wrapper {
+			display: block;
+		}
+		&__content-block {
+			max-width: 290px;
+			left: 15px;
+			margin-top: -195px;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-top: 30px;
+			padding-bottom: 26px;
+		}
+		&__title {
+			font-size: 24px;
+			line-height: 1.2;
+			margin-bottom: 24px;
+		}
+		&__card-block {
+			&:not(:last-child) {
+				margin-right: 0;
+				margin-bottom: 16px;
+			}
+		}
+		&__card-icon {
+			margin-right: 11px;
+		}
+		&__inner-text {
+			font-size: 14px;
+			line-height: 1.2;
+		}
+		&__map-block {
+			height: 430px;
+		}
+	}
+
+	.page-footer {
+		&__top-part &__wrapper {
+			display: block;
+		}
 	}
 }
 

@@ -25,6 +25,11 @@
 		line-height: 1.2;
 		color: #fff;
 		padding-bottom: 22px;
+		transition: all 0.3s ease-in-out;
+		&:hover, &:active, &:focus {
+			color: #FF6058;
+			text-decoration: none;
+		}
 		&:not(:last-child) {
 			margin-right: 61px;
 		}
@@ -56,6 +61,11 @@
 		line-height: 1.2;
 		color: #fff;
 		text-decoration: underline;
+		transition: all 0.3s ease-in-out;
+		&:hover, &:active, &:focus {
+			color: #fff;
+			text-decoration: none;
+		}
 	}
 	&__author-link {
 		display: inline-block;
@@ -64,6 +74,11 @@
 		line-height: 1.2;
 		color: #fff;
 		margin-right: 11px;
+		transition: all 0.3s ease-in-out;
+		&:hover, &:active, &:focus {
+			color: #fff;
+			text-decoration: none;
+		}
 		span {
 			margin-right: 11px;
 		}
