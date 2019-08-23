@@ -32,10 +32,6 @@ $(document).ready(function () {
             clickable: true,
         },
       });
-        $(window).resize(function() {
-            kindSwiper.update(true),
-            console.log("kindSwiper update")
-        })
  }
 });
 

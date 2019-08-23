@@ -8515,6 +8515,7 @@ button.swiper-pagination-bullet {
     .warranty-block__card-photo img {
       width: 305px;
       height: 197px;
+      border-radius: 0;
       border-top-left-radius: 10px;
       border-bottom-left-radius: 10px; }
   .warranty-block__card-inner {
