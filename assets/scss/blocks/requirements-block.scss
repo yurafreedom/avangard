@@ -76,9 +76,9 @@
 			right: 0;
 			width: 1545px;
 			height: 530px;
-			object-fit: contain;
-			border-top-right-radius: 10px;
-			border-bottom-right-radius: 10px;
+			object-position: center;
+			border-radius: 0 10px 10px 0;
+			background-color: #C4C4C4;
 		}
 	}
 }

@@ -14,7 +14,7 @@
 						<div class="main-block__description">
 							<p>Гарантия пожарной безопасности для нестандартных зданий и сооружений</p>
 						</div>
-						<a href="#" class="btn btn--order">Заказать документ</a>
+						<a href="#" class="btn btn--order" data-toggle="modal" data-target="#popup_order">Заказать документ</a>
 					</div>
 					<div class="col-12 col-md-12 col-xl-5">
 						<div class="main-block__photo-block">
@@ -115,9 +115,7 @@
 					<div class="col-12 col-md-12 col-xl-4 d-flex">
 						<div class="availability-block__card">
 							<div class="availability-block__card-icon">
-								<svg width="70" height="70">
-									<use xlink:href="#fire"></use>
-								</svg>
+								<img src="img/fire.png" alt="">
 							</div>
 							<div class="availability-block__card-title">Обеспечение пожарной безопасности</div>
 							<div class="availability-block__card-text">
@@ -128,9 +126,7 @@
 					<div class="col-12 col-md-12 col-xl-4 d-flex">
 						<div class="availability-block__card">
 							<div class="availability-block__card-icon">
-								<svg width="70" height="70">
-									<use xlink:href="#blueprint"></use>
-								</svg>
+								<img src="img/blueprint.png" alt="">
 							</div>
 							<div class="availability-block__card-title">Грамотное проектирование противопожарных систем</div>
 							<div class="availability-block__card-text">
@@ -141,9 +137,7 @@
 					<div class="col-12 col-md-12 col-xl-4 d-flex">
 						<div class="availability-block__card">
 							<div class="availability-block__card-icon">
-								<svg width="70" height="70">
-									<use xlink:href="#plan"></use>
-								</svg>
+								<img src="img/plan.png" alt="">
 							</div>
 							<div class="availability-block__card-title">Выполнение требований законодательства</div>
 							<div class="availability-block__card-text">
@@ -284,42 +278,6 @@
 													</div>
 												</div>
 											</div>
-											<div class="kinds-block__card-block">
-												<div class="kinds-block__card-heading">
-													<svg width="31" height="31">
-														<use xlink:href="#14_days"></use>
-													</svg>
-													<span>от 14 дней</span>
-												</div>
-												<div class="kinds-block__card-text">
-													<p>Доработка СТУ по замечаниям Заказчика, подготовка Пояснительной записки</p>
-												</div>
-												<div class="kinds-block__card-inner">
-													<div class="kinds-block__card-price">
-														<span class="kinds-block__card-from">от</span>
-														<span class="kinds-block__card-num">180 000</span>
-														<span class="kinds-block__card-symbol">Р</span>
-													</div>
-												</div>
-											</div>
-											<div class="kinds-block__card-block">
-												<div class="kinds-block__card-heading">
-													<svg width="31" height="31">
-														<use xlink:href="#30_days"></use>
-													</svg>
-													<span>от 30 дней</span>
-												</div>
-												<div class="kinds-block__card-text">
-													<p>Сопровождение согласования СТУ в Минстрое России. Сроки согласования СТУ Минстроем России могут быть перенесены с учетом внутреннего регламента министерства.</p>
-												</div>
-												<div class="kinds-block__card-inner">
-													<div class="kinds-block__card-price">
-														<span class="kinds-block__card-from">от</span>
-														<span class="kinds-block__card-num">180 000</span>
-														<span class="kinds-block__card-symbol">Р</span>
-													</div>
-												</div>
-											</div>
 										</div>
 										<div class="swiper-slide">
 											<div class="kinds-block__card-block">
@@ -328,42 +286,6 @@
 														<use xlink:href="#14_days"></use>
 													</svg>
 													<span>от 14 дней</span>
-												</div>
-												<div class="kinds-block__card-text">
-													<p>Подготовка проекта Технического задания на разработку СТУ, разработка стартовой редиакции СТУ</p>
-												</div>
-												<div class="kinds-block__card-inner">
-													<div class="kinds-block__card-price">
-														<span class="kinds-block__card-from">от</span>
-														<span class="kinds-block__card-num">180 000</span>
-														<span class="kinds-block__card-symbol">Р</span>
-													</div>
-												</div>
-											</div>
-											<div class="kinds-block__card-block">
-												<div class="kinds-block__card-heading">
-													<svg width="31" height="31">
-														<use xlink:href="#30_days"></use>
-													</svg>
-													<span>от 30 дней</span>
-												</div>
-												<div class="kinds-block__card-text">
-													<p>Сопровождение согласования СТУ в Минстрое России. Сроки согласования СТУ Минстроем России могут быть перенесены с учетом внутреннего регламента министерства.</p>
-												</div>
-												<div class="kinds-block__card-inner">
-													<div class="kinds-block__card-price">
-														<span class="kinds-block__card-from">от</span>
-														<span class="kinds-block__card-num">180 000</span>
-														<span class="kinds-block__card-symbol">Р</span>
-													</div>
-												</div>
-											</div>
-											<div class="kinds-block__card-block">
-												<div class="kinds-block__card-heading">
-													<svg width="30" height="30">
-														<use xlink:href="#20_days"></use>
-													</svg>
-													<span>от 20 дней</span>
 												</div>
 												<div class="kinds-block__card-text">
 													<p>Доработка СТУ по замечаниям Заказчика, подготовка Пояснительной записки</p>
@@ -381,48 +303,12 @@
 											<div class="kinds-block__card-block">
 												<div class="kinds-block__card-heading">
 													<svg width="31" height="31">
-														<use xlink:href="#14_days"></use>
-													</svg>
-													<span>от 14 дней</span>
-												</div>
-												<div class="kinds-block__card-text">
-													<p>Подготовка проекта Технического задания на разработку СТУ, разработка стартовой редиакции СТУ</p>
-												</div>
-												<div class="kinds-block__card-inner">
-													<div class="kinds-block__card-price">
-														<span class="kinds-block__card-from">от</span>
-														<span class="kinds-block__card-num">180 000</span>
-														<span class="kinds-block__card-symbol">Р</span>
-													</div>
-												</div>
-											</div>
-											<div class="kinds-block__card-block">
-												<div class="kinds-block__card-heading">
-													<svg width="31" height="31">
 														<use xlink:href="#30_days"></use>
 													</svg>
 													<span>от 30 дней</span>
 												</div>
 												<div class="kinds-block__card-text">
 													<p>Сопровождение согласования СТУ в Минстрое России. Сроки согласования СТУ Минстроем России могут быть перенесены с учетом внутреннего регламента министерства.</p>
-												</div>
-												<div class="kinds-block__card-inner">
-													<div class="kinds-block__card-price">
-														<span class="kinds-block__card-from">от</span>
-														<span class="kinds-block__card-num">180 000</span>
-														<span class="kinds-block__card-symbol">Р</span>
-													</div>
-												</div>
-											</div>
-											<div class="kinds-block__card-block">
-												<div class="kinds-block__card-heading">
-													<svg width="30" height="30">
-														<use xlink:href="#20_days"></use>
-													</svg>
-													<span>от 20 дней</span>
-												</div>
-												<div class="kinds-block__card-text">
-													<p>Доработка СТУ по замечаниям Заказчика, подготовка Пояснительной записки</p>
 												</div>
 												<div class="kinds-block__card-inner">
 													<div class="kinds-block__card-price">
@@ -564,9 +450,7 @@
 						<div class="stages-block__card">
 							<div class="stages-block__card-body">
 								<div class="stages-block__card-icon">
-									<svg width="80" height="80">
-										<use xlink:href="#contact"></use>
-									</svg>
+									<img src="img/contact.png" alt="">
 								</div>
 								<div class="stages-block__card-inner">
 									<span class="stages-block__card-num">1</span>
@@ -579,9 +463,7 @@
 						<div class="stages-block__card">
 							<div class="stages-block__card-body">
 								<div class="stages-block__card-icon">
-									<svg width="80" height="80">
-										<use xlink:href="#file"></use>
-									</svg>
+									<img src="img/file.png" alt="">
 								</div>
 								<div class="stages-block__card-inner">
 									<span class="stages-block__card-num">2</span>
@@ -594,9 +476,7 @@
 						<div class="stages-block__card">
 							<div class="stages-block__card-body">
 								<div class="stages-block__card-icon">
-									<svg width="80" height="80">
-										<use xlink:href="#checklist"></use>
-									</svg>
+									<img src="img/checklist.png" alt="">
 								</div>
 								<div class="stages-block__card-inner">
 									<span class="stages-block__card-num">3</span>
@@ -609,9 +489,7 @@
 						<div class="stages-block__card">
 							<div class="stages-block__card-body">
 								<div class="stages-block__card-icon">
-									<svg width="80" height="80">
-										<use xlink:href="#contract"></use>
-									</svg>
+									<img src="img/contract.png" alt="">
 								</div>
 								<div class="stages-block__card-inner">
 									<span class="stages-block__card-num">4</span>
@@ -624,9 +502,7 @@
 						<div class="stages-block__card">
 							<div class="stages-block__card-body">
 								<div class="stages-block__card-icon">
-									<svg width="80" height="80">
-										<use xlink:href="#sketch"></use>
-									</svg>
+									<img src="img/sketch.png" alt="">
 								</div>
 								<div class="stages-block__card-inner">
 									<span class="stages-block__card-num">5</span>
@@ -639,9 +515,7 @@
 						<div class="stages-block__card">
 							<div class="stages-block__card-body">
 								<div class="stages-block__card-icon none">
-									<svg width="80" height="80">
-										<use xlink:href="#handshake"></use>
-									</svg>
+									<img src="img/handshake.png" alt="">
 								</div>
 								<div class="stages-block__card-inner">
 									<span class="stages-block__card-num">6</span>

@@ -36,6 +36,9 @@
 			margin-right: 30px;
 		}
 	}
+	&__card-body {
+		display: block;
+	}
 	&__card-heading {
 		display: flex;
 		flex-direction: row;

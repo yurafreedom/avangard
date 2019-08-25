@@ -1,3 +1,77 @@
+if(/Android/.test(navigator.appVersion)) {
+    window.addEventListener("resize", function() {
+        if(document.activeElement.tagName=="INPUT" || document.activeElement.tagName=="TEXTAREA") {
+            document.activeElement.scrollIntoView();
+        }
+    });
+} 
+
+
+var block = $('<div>').css({'height':'50px','width':'50px'}),
+    indicator = $('<div>').css({'height':'200px'}),
+    scrollbarWidth = 0;
+
+$('body').append(block.append(indicator));
+var w1 = $('div', block).innerWidth();    
+block.css('overflow-y', 'scroll');
+var w2 = $('div', block).innerWidth();
+$(block).remove();
+scrollbarWidth = (w1 - w2);
+
+
+var bodyScrollOptions = {
+    reserveScrollBarGap: true
+};
+
+function openModal(hrefModal) {
+    
+    if ($(hrefModal).length > 0){
+        $(hrefModal).fadeIn(300);
+    
+        bodyScrollLock.clearAllBodyScrollLocks();
+        bodyScrollLock.disableBodyScroll(hrefModal, bodyScrollOptions);
+    }
+}
+
+function closeModals() {
+    if (scrollbarWidth > 0) {
+        $('.popup-block:not(:hidden)').fadeOut(200, function() {
+            bodyScrollLock.clearAllBodyScrollLocks();
+        });
+    } else {
+        $('.popup-block:not(:hidden)').fadeOut(200);
+        
+        bodyScrollLock.clearAllBodyScrollLocks();
+    }
+}
+
+
+$(document.body).on('click','[data-toggle="modal"]',function(e) {
+    e.preventDefault();
+    
+    var hrefModal = $(this).attr('data-target');
+    
+    openModal(hrefModal);
+});
+
+$(document.body).on('click','.popup-block__overlay',function(e) {
+    var closeButton = $(this).children('[data-toggle="dismiss"]');
+    
+    if (e.target != this) {
+//      return false;
+    } else {
+        closeModals();
+    }
+});
+
+
+$(document.body).on('click','[data-toggle="dismiss"]',function(e) {
+    e.preventDefault();
+    
+    closeModals();
+});
+
+
 $(document).ready(function () {
  if( $(".swiper-container").length ) {
 	  var objectSwiper = new Swiper ('#objects_slider', {
@@ -21,7 +95,7 @@ $(document).ready(function () {
 $(document).ready(function () {
  if( $(".swiper-container").length ) {
       var kindSwiper = new Swiper ('#kinds_slider', {
-        slidesPerView: 1,
+        slidesPerView: 3,
         spaceBetween: 31,
         navigation: {
             nextEl: '.kinds-button-next',
