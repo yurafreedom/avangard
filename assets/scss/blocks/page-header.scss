@@ -59,6 +59,11 @@
 		line-height: 1.2;
 		color: #fff;
 		padding-bottom: 22px;
+		transition: all 0.3s ease-in-out;
+		&:hover, &:active, &:focus {
+			color: darken(#fff, 15%);
+			text-decoration: none;
+		}
 		&:not(:last-child) {
 			margin-right: 61px;
 		}

@@ -7125,7 +7125,11 @@ button.swiper-pagination-bullet {
     font-weight: 400;
     line-height: 1.2;
     color: #fff;
-    padding-bottom: 22px; }
+    padding-bottom: 22px;
+    transition: all 0.3s ease-in-out; }
+    .page-header__phone-link:hover, .page-header__phone-link:active, .page-header__phone-link:focus {
+      color: #d9d9d9;
+      text-decoration: none; }
     .page-header__phone-link:not(:last-child) {
       margin-right: 61px; }
     .page-header__phone-link:not(:last-child)::before {
@@ -9162,6 +9166,36 @@ button.swiper-pagination-bullet {
     right: 212px; }
   .warranty-button-prev, .warranty-button-next {
     bottom: -30px; } }
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .main-block__title {
+    font-size: 36px; }
+  .main-block__description {
+    font-size: 20px; }
+  .main-block__photo-block img {
+    width: 675px;
+    height: 475px; }
+  .main-block .btn--order {
+    padding-top: 19px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.2; }
+  .requirements-block__photo-block {
+    min-height: 350px; }
+    .requirements-block__photo-block img {
+      width: 1200px;
+      height: 350px; }
+  .protect-block__photo-block {
+    min-height: 350px; }
+    .protect-block__photo-block img {
+      width: 1200px;
+      height: 350px; }
+  .stages-block__photo-block {
+    min-height: 350px; }
+    .stages-block__photo-block img {
+      height: 350px; }
+  .contacts-block__content-block {
+    left: 15px; } }
 
 body, html {
   -webkit-overflow-scrolling: touch !important; }

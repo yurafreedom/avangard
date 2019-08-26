@@ -988,3 +988,64 @@
 		bottom: -30px;
 	}
 }
+
+@include for-size(desktop) {
+	.page-header {
+
+	}
+
+	.main-block {
+		&__title {
+			font-size: 36px;
+		}
+		&__description {
+			font-size: 20px;
+		}
+		&__photo-block {
+			img {
+				width: 675px;
+				height: 475px;
+			}
+		}
+		.btn--order {
+			padding-top: 19px;
+			padding-bottom: 20px;
+			font-size: 18px;
+			line-height: 1.2;
+		}
+	}
+
+	.requirements-block {
+		&__photo-block {
+			min-height: 350px;
+			img {
+				width: 1200px;
+				height: 350px;
+			}
+		}
+	}
+
+	.protect-block {
+		&__photo-block {
+			min-height: 350px;
+			img {
+				width: 1200px;
+				height: 350px;
+			}
+		}
+	}
+
+	.stages-block {
+		&__photo-block {
+			min-height: 350px;
+			img {
+				height: 350px;
+			}
+		}
+	}
+	.contacts-block {
+		&__content-block {
+			left: 15px;
+		}
+	}
+}
