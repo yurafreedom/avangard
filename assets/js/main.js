@@ -105,7 +105,17 @@ $(document).ready(function () {
             el: ".js--kinds-pag",
             clickable: true,
         },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+            },
+        }
       });
+        $(window).resize(function() {
+            kindSwiper.update(true),
+            console.log("kindSwiper update")
+        })
  }
 });
 
@@ -140,7 +150,7 @@ $(document).ready(function () {
 $(document).ready(function () {
  if( $(".swiper-container").length ) {
       var reviewSwiper = new Swiper ('#reviews_slider', {
-        slidesPerView: 1,
+        slidesPerView: 4,
         navigation: {
             nextEl: '.reviews-button-next',
             prevEl: '.reviews-button-prev',
@@ -149,9 +159,14 @@ $(document).ready(function () {
             el: ".js--reviews-pag",
             clickable: true,
         },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+        }
       });
         $(window).resize(function() {
-            kindSwiper.update(true),
+            reviewSwiper.update(true),
             console.log("reviewSwiper update")
         })
  }
@@ -165,29 +180,33 @@ $(".about-block__input").on("change focusout keydown", function() {
     "" != $(this).val() ? $(this).addClass("not-empty") : $(this).removeClass("not-empty")
 })
 
+$.extend($.validator.messages, {
+    required: "Ошибка. Поле обязательно для заполнения",
+    email: "Ошибка. Пожалуйста, введите корректный адрес электронной почты",
+});
 
-// $("form").each(function() {
-//     $(this).validate({
-//         errorPlacement: function(e, i) {
-//               e.addClass("error-message"),
-//               e.appendTo(i.parent("div"))
-//         },
-//         highlight: function(e) {
-//             $(e).addClass("has-error").parent().addClass("has-error");
-//         },
-//         unhighlight: function(e) {
-//             $(e).removeClass("has-error").parent().removeClass("has-error");
-//         },
-//         ignore: [],
-//         rules: {
-//             name: "required",
-//             tel: {
-//                 required: !0
-//             },
-//             email: {
-//                 required: !0,
-//                 email: true
-//             }
-//         },
-//     });
-// });
+$("form").each(function() {
+    $(this).validate({
+        errorPlacement: function(e, i) {
+              e.addClass("error-message"),
+              e.appendTo(i.parent("div"))
+        },
+        highlight: function(e) {
+            $(e).addClass("has-error").parent().addClass("has-error");
+        },
+        unhighlight: function(e) {
+            $(e).removeClass("has-error").parent().removeClass("has-error");
+        },
+        ignore: [],
+        rules: {
+            name: "required",
+            tel: {
+                required: !0
+            },
+            email: {
+                required: !0,
+                email: true
+            }
+        },
+    });
+});

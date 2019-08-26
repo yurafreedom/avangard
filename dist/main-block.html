@@ -239,7 +239,7 @@
 						</div>
 					</div>
 					<div class="col-12">
-						<a href="#" class="btn btn--stu">Заказать СТУ</a>
+						<a href="#" class="btn btn--stu" data-toggle="modal" data-target="#popup_order">Заказать СТУ</a>
 					</div>
 				</div>
 			</div>
@@ -465,19 +465,19 @@
 						<div class="col-12 col-md-12 col-xl-7 d-flex">
 							<form action="" class="about-block__form">
 								<div class="about-block__input-wrapper">
-									<input type="text" id="type" name="type" class="text-input about-block__input not-empty">
+									<input type="text" id="type" name="type" class="text-input about-block__input not-empty" required>
 									<label for="type" class="about-block__label">Тип объекта</label>
 								</div>
 								<div class="about-block__input-wrapper">
-									<input type="text" id="floor" name="floor" class="text-input about-block__input not-empty">
+									<input type="text" id="floor" name="floor" class="text-input about-block__input not-empty" required>
 									<label for="floor" class="about-block__label">Этажность</label>
 								</div>
 								<div class="about-block__input-wrapper">
-									<input type="text" id="height" name="height" class="text-input about-block__input not-empty">
+									<input type="text" id="height" name="height" class="text-input about-block__input not-empty" required>
 									<label for="height" class="about-block__label">Высота</label>
 								</div>
 								<div class="about-block__input-wrapper">
-									<input type="text" id="complexity" name="complexity" class="text-input about-block__input not-empty">
+									<input type="text" id="complexity" name="complexity" class="text-input about-block__input not-empty" required>
 									<label for="complexity" class="about-block__label">Сложность архитектурных решений</label>
 								</div>
 								<span class="about-block__personal-info">Нажав на кнопку, я даю согласие на обработку персональных данных</span>
@@ -597,22 +597,24 @@
 								<div id="reviews_slider" class="swiper-container">
 									<div class="swiper-wrapper">
 										<div class="swiper-slide">
-											<div class="reviews-block__slide-photo" style="background-image: url(img/review-photo-1.png);"></div>
-											<div class="reviews-block__slide-photo" style="background-image: url(img/review-photo-2.png);"></div>
-											<div class="reviews-block__slide-photo" style="background-image: url(img/review-photo-3.png);"></div>
-											<div class="reviews-block__slide-photo" style="background-image: url(img/review-photo-4.png);"></div>
+											<div class="reviews-block__slide-wrap">
+												<div class="reviews-block__slide-photo" style="background-image: url(img/review-photo-1.png);"></div>
+											</div>
 										</div>
 										<div class="swiper-slide">
-											<div class="reviews-block__slide-photo" style="background-image: url(img/review-photo-1.png);"></div>
-											<div class="reviews-block__slide-photo" style="background-image: url(img/review-photo-2.png);"></div>
-											<div class="reviews-block__slide-photo" style="background-image: url(img/review-photo-3.png);"></div>
-											<div class="reviews-block__slide-photo" style="background-image: url(img/review-photo-4.png);"></div>	
+											<div class="reviews-block__slide-wrap">
+												<div class="reviews-block__slide-photo" style="background-image: url(img/review-photo-2.png);"></div>
+											</div>
 										</div>
 										<div class="swiper-slide">
-											<div class="reviews-block__slide-photo" style="background-image: url(img/review-photo-1.png);"></div>
-											<div class="reviews-block__slide-photo" style="background-image: url(img/review-photo-2.png);"></div>
-											<div class="reviews-block__slide-photo" style="background-image: url(img/review-photo-3.png);"></div>
-											<div class="reviews-block__slide-photo" style="background-image: url(img/review-photo-4.png);"></div>
+											<div class="reviews-block__slide-wrap">
+												<div class="reviews-block__slide-photo" style="background-image: url(img/review-photo-3.png);"></div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="reviews-block__slide-wrap">
+												<div class="reviews-block__slide-photo" style="background-image: url(img/review-photo-4.png);"></div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -743,11 +745,11 @@
 					</div>
 					<form action="" class="popup-block__form">
 						<div class="about-block__input-wrapper">
-							<input type="text" id="popup_name" name="popup_name" class="text-input about-block__input not-empty">
+							<input type="text" id="popup_name" name="popup_name" class="text-input about-block__input not-empty" required>
 							<label for="popup_name" class="about-block__label">Ваше имя</label>
 						</div>
 						<div class="about-block__input-wrapper">
-							<input type="text" id="popup_email" name="popup_email" class="text-input about-block__input not-empty">
+							<input type="text" id="popup_email" name="popup_email" class="text-input about-block__input not-empty" required>
 							<label for="popup_email" class="about-block__label">E-mail</label>
 						</div>
 						<span class="popup-block__personal-info">Нажав на кнопку, я даю согласие на обработку персональных данных</span>

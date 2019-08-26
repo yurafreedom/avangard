@@ -61,6 +61,7 @@
 	}
 
 	.regulations-block {
+		padding-bottom: 30px;
 		&__wrapper {
 			margin-top: -18px;
 			padding: 15px 15px 26px 15px;
@@ -100,8 +101,8 @@
 	}
 
 	.requirements-block {
-		padding-top: 60px;
-		padding-bottom: 60px;
+		padding-top: 30px;
+		padding-bottom: 30px;
 		&__title {
 			font-size: 24px;
 			line-height: 1.25;
@@ -143,7 +144,8 @@
 	}
 
 	.availability-block {
-		padding-bottom: 40px;
+		padding-top: 30px;
+		padding-bottom: 20px;
 		&__title {
 			font-size: 24px;
 			line-height: 1.2;
@@ -181,7 +183,8 @@
 	}
 
 	.protect-block {
-		padding-bottom: 60px;
+		padding-top: 20px;
+		padding-bottom: 30px;
 		&__title {
 			font-size: 24px;
 			line-height: 1.28;
@@ -208,7 +211,8 @@
 	}
 
 	.save-block {
-		padding-bottom: 60px;
+		padding-top: 30px;
+		padding-bottom: 30px;
 		&__title {
 			font-size: 24px;
 			line-height: 1.24;
@@ -237,7 +241,8 @@
 	}
 
 	.objects-block {
-		padding-bottom: 56px;
+		padding-top: 30px;
+		padding-bottom: 28px;
 		#objects_slider {
 			width: calc(100% + 30px);
 			margin-left: -15px;
@@ -283,7 +288,8 @@
 	}
 	
 	.kinds-block {
-		padding-bottom: 87px;
+		padding-top: 28px;
+		padding-bottom: 44px;
 		#kinds_slider {
 			margin-left: 0;
 			margin-right: 0;
@@ -332,6 +338,8 @@
 	}
 
 	.warranty-block {
+		padding-top: 43px;
+		padding-bottom: 140px;
 		#image_slider {
 			width: 305px;
 			left: 15px;
@@ -415,7 +423,8 @@
 	}
 
 	.about-block {
-		padding-bottom: 90px;
+		padding-top: 65px;
+		padding-bottom: 61px;
 		&__background-block {
 			&::before {
 				top: 10px;
@@ -483,7 +492,8 @@
 	}
 
 	.stages-block {
-		padding-bottom: 60px;
+		padding-top: 30px;
+		padding-bottom: 30px;
 		&__title {
 			font-size: 24px;
 			line-height: 1.3;
@@ -528,6 +538,7 @@
 	}
 
 	.reviews-block {
+		padding-top: 30px;
 		padding-bottom: 277px;
 		&__title {
 			font-size: 24px;

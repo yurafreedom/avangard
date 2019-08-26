@@ -2,17 +2,13 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	
 	z-index: 600;
-	
 	width: 100%;
 	height: 100%;
 	min-height: 100vh;
 	overflow-y: auto;
 	color: #000;
-	
 	display: none;
-	
 	&__overlay {
 		position: relative;
 		display: flex;
@@ -24,7 +20,6 @@
 		overflow: hidden;
 		background-color: rgba(31, 31, 31, 0.5);
 	}
-	
 	&__close {
 		position: absolute;
 		top: 30px;
@@ -33,9 +28,8 @@
 		width: 24px;
 		height: 24px;
 		z-index: 100;
-		
-		&:after,
-		&:before {
+		&::after,
+		&::before {
 			content: "";
 			display: block;
 			width: 24px;
@@ -52,23 +46,19 @@
 			margin-top: -1px;
 			margin-left: -17px;
 		}
-		
-		&:after {
+		&::after {
 			transform: rotate(-45deg);
 		}
-		
-		&:before {
+		&::before {
 			transform: rotate(45deg);
 		}
-		
 		&:hover {
-			&:after,
-			&:before {
+			&::after,
+			&::before {
 				background-color: #000;
 			}
 		}
 	}
-	
 	&__popup {
 		position: relative;
 		width: 1170px;
@@ -109,70 +99,130 @@
 		display: block;
 		font-size: 18px;
 		line-height: 1.67;
+		color: #333;
+		margin: 0;
+	}
+	&__form {
+		width: 500px;
+	}
+	.about-block__input-wrapper {
+		max-width: 500px;
+		margin-bottom: 27px;
+	}
+	.about-block__input {
+		border: 1px solid #828282;
+		border-radius: 5px;
+		&:active, &:focus {
+			border-color: #FFFA7E;
+		}
+	}
+	&__personal-info {
+		display: block;
+		margin-bottom: 50px;
+		margin-top: -7px;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.2;
+		color: #828282;
 	}
 }
 
 @include for-size(mobile) {
 	.popup-block {
 		-webkit-overflow-scrolling: touch !important;
-		
-		&__overlay {
-			overflow: hidden;
+		&__wrapper {
 			display: block;
+			max-width: 100%;
 		}
-		
 		&__popup {
-			width: 100%;
+			width: 96%;
 			height: auto;
-            min-height: 100vh;
-			
 			overflow: hidden;
-			
 			.inner-content {
 				padding-left: 15px;
 				padding-right: 15px;
-				
-				padding-top: 50px;
-				padding-bottom: 120px;
+				padding-top: 30px;
+				padding-bottom: 30px;
 			}
 		}
-		
-		&__close {
-			margin: 0 auto;
-			margin-bottom: 25px;
+		&__content-icon {
+			margin-bottom: 20px;
 		}
-		
+		&__content-icon svg {
+			width: 50px;
+			height: 50px;
+		}
+		&__close {
+			top: 20px;
+			right: 20px;
+			width: 18px;
+			height: 18px;
+			&::after,
+			&::before {
+				width: 18px;
+			}
+		}
+		&__content-title {
+			font-size: 24px;
+			line-height: 1.2;
+			margin-bottom: 14px;
+		}
+		&__content-text {
+			font-size: 14px;
+			line-height: 1.2;
+			margin-bottom: 16px;
+		}
+		&__form {
+			width: 100%;
+		}
+		.about-block__input-wrapper {
+			max-width: 100%;
+			margin-bottom: 15px;
+		}
+		&__personal-info {
+			margin-top: 20px;
+			margin-bottom: 37px;
+		}
+		.btn--send {
+			width: 100%;
+			padding-top: 16px;
+			padding-bottom: 18px;
+			font-size: 14px;
+			line-height: 1.2;
+		}
 	}
 }
 
 
 @include for-size(tablet) {
 	.popup-block {
-		
 		&__overlay {
-			display: -webkit-flex;
-			display: -moz-flex;
-			display: -ms-flex;
-			display: -o-flex;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			
 			padding-top: 60px;
 			padding-bottom: 60px;
 		}
-		
 		&__close {
 			position: absolute;
 			top: 20px;
 			right: 20px;
 		}
-		
+		&__wrapper {
+			display: block;
+			max-width: 768px;
+		}
 		&__popup {
+			width: 96%;
 			.inner-content {
-
+				padding-left: 60px;
+				padding-right: 60px;
 			}
+		}
+		&__content-block {
+			max-width: 100%;
+			margin-bottom: 60px;
 		}
 	}
 }

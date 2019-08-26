@@ -19,6 +19,7 @@
 	justify-content: center;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	height: auto;
 }
 
 .objects-button-prev, .objects-button-next,
@@ -102,4 +103,8 @@
 		transform: rotate(0deg);
 		border: 1px solid #000;
 	}
+}
+
+.error-message {
+	margin-top: 20px;
 }

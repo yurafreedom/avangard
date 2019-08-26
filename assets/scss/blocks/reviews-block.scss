@@ -1,5 +1,6 @@
 .reviews-block {
-	padding-bottom: 303px;
+	padding-top: 80px;
+	padding-bottom: 153px;
 	&__title-wrapper {
 		display: flex;
 		flex-direction: column;
@@ -8,7 +9,7 @@
 	&__title {
 		position: relative;
 		display: inline-block;
-		margin-bottom: 90px;
+		margin-bottom: 69px;
 		font-size: 36px;
 		line-height: 1.278;
 		font-weight: 700;
@@ -48,6 +49,12 @@
 	&__pagination .swiper-pagination-bullet-active {
 		background-color: #FF6058;
 	}
+	&__wrapper {
+		margin: 0 -15px;
+	}
+	&__slide-wrap {
+		padding: 21px 15px;
+	}
 	&__slide-photo {
 		display: block;
 		width: 270px;
@@ -57,8 +64,5 @@
 		background-repeat: no-repeat;
 		background-color: #fff;
 		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
-		&:not(:last-child) {
-			margin-right: 30px;
-		}
 	}
 }
